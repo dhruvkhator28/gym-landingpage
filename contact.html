@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strength Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/749fe63f85.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">STRENGTH<strong>FITNESS</strong></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" id="close"></i>
+                <ul>
+                    <li>
+                        <div onclick="window.location.href='index.html';">HOME</div>
+                    </li>
+                    <li>
+                        <div onclick="window.location.href='about.html';">ABOUT</div>
+                    </li>
+                    <li>
+                        <div onclick="window.location.href='package.html';">PACKAGES</div>
+                    </li>
+                    <li>
+                        <div onclick="window.location.href='blog.html';">BLOG</div>
+                    </li>
+                    <li>
+                        <div onclick="window.location.href='contact.html';">CONTACT</div>
+                    </li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" id="show"></i>
+        </nav>
+        <div class="head">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.847090589819!2d72.80614601481373!3d19.41901164614726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a95ec21c908d%3A0x341506346ea6974e!2sStrength%20Fitness%20Center!5e0!3m2!1sen!2sin!4v1624190409282!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contactUs">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Mumbai, Maharashtra, IN</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h5>+91 0123456789</h5>
+                        <p>Monday to Sunday, 5AM to 11PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="far fa-envelope"></i>
+                    <span>
+                        <h5>strengthfc@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                
+                <form action="">
+                    <input type="text" placeholder="Enter Your Name" required>
+                    <input type="email" placeholder="Enter Your Email" required>
+                    <input type="text" placeholder="Enter The Subject of Query" required>
+                    <textarea rows="8" placeholder="Query Or Message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia molestias possimus, laudantium sequi, ipsum
+            numquam, pariatur quod maiores debitis culpa blanditiis quibusdam!<br> Molestias in, modi suscipit nobis
+            temporibus minus corporis.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made by Dhruv Khator</p>
+    </section>
+
+
+</body>
+<script>
+    let navLinks = document.getElementById("navLinks");
+    let show = document.getElementById("show");
+    let close = document.getElementById("close");
+
+    show.addEventListener('click', () => {
+        navLinks.classList.add('active');
+    });
+
+    close.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+    });
+
+</script>
+
+</html>

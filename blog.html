@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strength Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/749fe63f85.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">STRENGTH<strong>FITNESS</strong></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" id="close"></i>
+                <ul>
+                    <li>
+                        <div onclick="window.location.href='index.html';">HOME</div>
+                    </li>
+                    <li>
+                        <div onclick="window.location.href='about.html';">ABOUT</div>
+                    </li>
+                    <li>
+                        <div onclick="window.location.href='package.html';">PACKAGES</div>
+                    </li>
+                    <li>
+                        <div onclick="window.location.href='blog.html';">BLOG</div>
+                    </li>
+                    <li>
+                        <div onclick="window.location.href='contact.html';">CONTACT</div>
+                    </li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" id="show"></i>
+        </nav>
+        <div class="head-blog">
+            <h1>Our Achievements & Online Training Programs For 2021</h1>
+        </div>
+    </section>
+
+    <section class="blogContent">
+        <div class="row">
+            <div class="blogLeft">
+                <img src="bac.jpg" alt="">
+                <h2>Our Achievements & Online Training Programs For 2021</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quidem nulla ad. Minus quo
+                    distinctio vero qui, architecto magni minima unde. Non accusantium officia vero. Praesentium fuga
+                    sint totam debitis?</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam laboriosam dolorem porro itaque,
+                    odit dignissimos aliquam excepturi nam voluptatibus quas incidunt odio fugiat aut tempore illum
+                    voluptates laborum dolorum reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolorum ad similique laborum quisquam ducimus deleniti obcaecati delectus ex. Dignissimos obcaecati
+                    voluptatibus, eveniet repellat est natus nostrum velit iure distinctio eum? Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Molestias exercitationem nostrum optio, odio ipsa laboriosam quas
+                    maiores, laborum debitis blanditiis quisquam labore sint tenetur possimus! Nihil corrupti porro at
+                    architecto.</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam laboriosam dolorem porro itaque,
+                    odit dignissimos aliquam excepturi nam voluptatibus quas incidunt odio fugiat aut tempore illum
+                    voluptates laborum dolorum reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolorum ad similique laborum quisquam ducimus deleniti obcaecati delectus ex. Dignissimos obcaecati
+                    voluptatibus, eveniet repellat est natus nostrum velit iure distinctio eum? Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Molestias exercitationem nostrum optio, odio ipsa laboriosam quas
+                    maiores, laborum debitis blanditiis quisquam labore sint tenetur possimus! Nihil corrupti porro at
+                    architecto.</p>
+
+                    <div class="commentBox">
+                        <h3>Leave a Comment</h3>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Enter Name">
+                            <input type="email" placeholder="Enter Email">
+                            <textarea rows="5" placeholder="Your Comment"></textarea>
+                        </form>
+                        <button type="submit">Post Comment</button>
+                    </div>
+            </div>
+            <div class="blogRight">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Weight Training</span>
+                    <span>21</span>
+                    </div>
+                    <div>
+                    <span>Cardio</span>
+                    <span>25</span>
+                </div>
+                <div>
+                    <span>Yoga</span>
+                    <span>18</span>
+                </div>
+                <div>
+                    <span>Calisthenics</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Weight Training + Cardio</span>
+                    <span>28</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia molestias possimus, laudantium sequi, ipsum
+            numquam, pariatur quod maiores debitis culpa blanditiis quibusdam!<br> Molestias in, modi suscipit nobis
+            temporibus minus corporis.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made by Dhruv Khator</p>
+    </section>
+
+
+</body>
+<script>
+    let navLinks = document.getElementById("navLinks");
+    let show = document.getElementById("show");
+    let close = document.getElementById("close");
+
+    show.addEventListener('click', () => {
+        navLinks.classList.add('active');
+    });
+
+    close.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+    });
+
+</script>
+
+</html>
